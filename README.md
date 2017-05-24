@@ -8,6 +8,7 @@
 
 ### Prerequisites
 * Visual Studio 2017
+
 ### Prerequisite Understanding
 * .NET Core
 * ASP\.NET Core
