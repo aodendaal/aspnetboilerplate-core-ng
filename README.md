@@ -1,10 +1,10 @@
-# ASP\.NETBoilerplate Tutorial
-* [How to Initialize and Run a Clean Template](how-to-initialize-and-run-a-clean-template)
-* [How to Create an Entity]()
-* [How to Update the Database]()
-* [How to Create an Application Service]()
+# ASP\.NET Boilerplate Tutorials
+* [How to Initialize and Run a Clean Template](#how-to-initialize-and-run-a-clean-template)
+* [How to Create an Entity](#how-to-create-an-entity)
+* [How to Update the Database](#how-to-update-the-database)
+* [How to Create an Application Service](#how-create-an-application-service)
 
-## How to Initialize and Run a Clean Template
+# How to Initialize and Run a Clean Template
 1. [Download ASP\.NET Boilerplate template](#1-download-template)
 2. [Fix EFCore Versions & Add DotNet Tooling](#2-fix-efcore-versions--add-dotnet-tooling)
 3. [Change Database Connection String](#3-change-database-connection-string)
@@ -25,7 +25,7 @@
 \.NET Core can be thought of as a cross-platform version of the \.NET Framework supporting Windows, macOS and Linux, and can be used in device, cloud, and embedded/IoT scenarios. It implements the \.NET Standard Library specification.
 
 #### ASP\.NET Core
-ASP\.NET Core is no longer based on System\.Web\.dll
+ASP\.NET Core is no longer based on __System.Web.dll__
 ASP\.NET Core apps can run on \.NET Core or on the full \.NET Framework
 
 #### Entity Framework Core
@@ -56,7 +56,7 @@ Note there is an extra reference added to enable using the Entity Framework Core
 ```
 
 ## 3. Change Database Connection String
-Edit _appsettings.json_ in __/aspnet-core/src/project.Web.Host__ to change the connection string to use __localdb__.
+Edit _appsettings.json_ in __.Web.Host__ to change the connection string to use __localdb__.
 ```javascript
   "ConnectionStrings": {
     "Default": "Data Source=(localdb)\\MSSQLLocalDB; Initial Catalog=PeopleProject;"
@@ -107,3 +107,22 @@ http://localhost:4200
 # Congratulations! We're halfway there!
 > At this point we've downloaded, initialized and run the bare template. Well done on making it this far.
 > Now we can start to create our own customizations on top of the ASP\.NET Boilerplate platform.
+
+# How to Create an Entity
+TODO
+# How to Update the Database
+TODO
+# How to Create an Application Service
+* [Unit of Work](#unit-of-work)
+* [Hide from Controller](#hide-from-controller)
+
+### Unit of Work
+By default functions in an application service are transactional, meaning if there's an exception in the function then all repository functions are rolled back. It can be turned off by adding the ```UnitOfWork``` attribute to your function and setting ```IsDisabled``` to ```true```.
+```csharp
+[UnitOfWork(IsDisabled: true)]
+```
+### Hide from Controller
+The __.Web.Core__ module is configured to generate WebAPI controllers for any application services found in __.Application__. To prevent a specific application service or function in a service from being generated, add the ```RemoteService``` attibute and set ```isEnabled``` to ```false```.
+```csharp
+[RemoteService(isEnabled: false)]
+```
