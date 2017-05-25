@@ -1,4 +1,10 @@
-# Tutorial Steps
+# ASP\.NETBoilerplate Tutorial
+* [How to Initialize and Run a Clean Template](how-to-initialize-and-run-a-clean-template)
+* [How to Create an Entity]()
+* [How to Update the Database]()
+* [How to Create an Application Service]()
+
+## How to Initialize and Run a Clean Template
 1. [Download ASP\.NET Boilerplate template](#1-download-template)
 2. [Fix EFCore Versions & Add DotNet Tooling](#2-fix-efcore-versions--add-dotnet-tooling)
 3. [Change Database Connection String](#3-change-database-connection-string)
