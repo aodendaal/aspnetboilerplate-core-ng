@@ -20,6 +20,20 @@
 * VSCode
 * NodeJS
 
+### Prerequisite Understanding
+#### \.NET Core
+\.NET Core can be thought of as a cross-platform version of the \.NET Framework supporting Windows, macOS and Linux, and can be used in device, cloud, and embedded/IoT scenarios. It implements the \.NET Standard Library specification.
+
+#### ASP\.NET Core
+ASP\.NET Core is no longer based on System\.Web\.dll
+ASP\.NET Core apps can run on \.NET Core or on the full \.NET Framework
+
+#### Entity Framework Core
+The technology formerly known as Entity Framework 7 (EF7) was renamed to Entity Framework Core (EF Core) in early 2016 but that doesn't mean it only runs on \.NET Core. EF Core can run on the full \.NET Framework or on \.NET Core.
+
+#### Angular
+Angular is an open-source frontend web application platform
+
 ## 1. Download template
 Goto the [ASP.NET Boilerplate](https://www.aspnetboilerplate.com) website and download the ASP\.NET Core 1.x template using the .NET Core 1.1 framework, select Single Page Web Application using Angular 2 and make sure Include module-zero is checked.
 
