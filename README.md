@@ -1,13 +1,13 @@
 # Tutorial Steps
-1. [Download ASP\.NET Boilerplate template](#download-template)
-2. Fix EFCore Versions & Add DotNet Tooling
-3. Change Database Connection String
-4. Restore NuGet Packages
-5. Create Database
-6. Run Backend
-7. Install NPM Dependencies
-8. Refresh Swagger Proxies
-9. [Run Frontend](#9.-run-frontend)
+1. [Download ASP\.NET Boilerplate template](#1-download-template)
+2. [Fix EFCore Versions & Add DotNet Tooling](#2-fix-efcore-versions--add-dotnet-tooling)
+3. [Change Database Connection String](#3-change-database-connection-string)
+4. [Restore NuGet Packages](#4-restore-nuget-packages)
+5. [Create Database](#5-create-database)
+6. [Run Backend](#6-run-backend)
+7. [Install NPM Dependencies](#7-install-npm-dependencies)
+8. [Refresh Swagger Proxies](#8-refresh-swagger-proxies)
+9. [Run Frontend](#9-run-frontend)
 
 ### Prerequisites Tools
 * Visual Studio 2017
