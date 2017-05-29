@@ -1,3 +1,5 @@
+[< Back to tutorial](README.md)
+
 # Localization
 ASP\.NET Boilerplate supports localization out-of-the-box.
 
