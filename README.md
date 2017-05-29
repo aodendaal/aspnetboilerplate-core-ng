@@ -15,6 +15,9 @@
 8. [Refresh Swagger Proxies](#8-refresh-swagger-proxies)
 9. [Run Frontend](#9-run-frontend)
 
+# Other Articles
+* [Localization](localization.md)
+
 ### Prerequisites Tools
 * Visual Studio 2017
 * VSCode
