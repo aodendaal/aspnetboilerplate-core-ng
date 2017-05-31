@@ -27,4 +27,5 @@ Angular is an open-source frontend web application platform
 * [How to Create an Application Service](applicationservice.md)
 
 # Other Articles
+* [Project Architecture](projectarchitecture.md)
 * [Localization](localization.md)
