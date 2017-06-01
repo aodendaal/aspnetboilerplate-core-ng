@@ -22,7 +22,7 @@ Angular is an open-source frontend web application platform
 
 # Main Articles
 * [How to Initialize and Run a Clean Template](cleantemplate.md)
-* How to Create an Entity
+* [How to Create an Entity](entity.md)
 * How to Update the Database
 * [How to Create an Application Service](applicationservice.md)
 
