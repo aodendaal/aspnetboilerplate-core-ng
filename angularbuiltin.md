@@ -1,6 +1,6 @@
 [< Back to tutorial](README.md)
 
-# Angular Built-in Functions
+# Frontend Built-in Functions
 
 #### [Auth](#auth-1)
 * [clearToken](#cleartoken)
@@ -117,44 +117,50 @@ Saves auth token.
 ## Log
 
 ### debug
-```debug(logObject?: any): void;```
+```abp.log.debug(logObject?: any): void;```
 
 ### error
-```error(logObject?: any): void;```
+```abp.log.error(logObject?: any): void;```
 
 ### fatal
-```fatal(logObject?: any): void;```
+```abp.log.fatal(logObject?: any): void;```
 
 ### info
-```info(logObject?: any): void;```
+```abp.log.info(logObject?: any): void;```
 
 ### log
-```log(logObject?: any, logLevel?: levels): void;```
+```abp.log.log(logObject?: any, logLevel?: levels): void;```
 
 ### warn
-```warn(logObject?: any): void;```
+```abp.log.warn(logObject?: any): void;```
 
 ## Message
 
 ### confirm
-```confirm(message: string, callback?: (result: boolean) => void): Promise;```
+```abp.message.confirm(message: string, callback?: (result: boolean) => void): Promise;```
 
-```confirm(message: string, title?: string, callback?: (result: boolean) => void): Promise;```
+```abp.message.confirm(message: string, title?: string, callback?: (result: boolean) => void): Promise;```
 
 ### error
-```error(message: string, title?: string): Promise;```
+```abp.message.error(message: string, title?: string): Promise;```
 
 ### info
-```info(message: string, title?: string): Promise;```
+```abp.message.info(message: string, title?: string): Promise;```
 
 ![info dialog](img/infomessage.png "info dialog")
 
-
 ### success
-```success(message: string, title?: string): Promise;```
+```abp.message.success(message: string, title?: string): Promise;```
 
 ### warn
-```warn(message: string, title?: string): Promise;```
+```abp.message.warn(message: string, title?: string): Promise;```
+
+## Notify
+
+### info
+```abp.notify.info(message: string, title?: string, options?: any): void;```
+
+![info notification](img/infonotification.png "info notification")
 
 ## Utils
 
