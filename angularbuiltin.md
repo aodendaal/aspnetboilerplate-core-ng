@@ -147,6 +147,9 @@ Saves auth token.
 ### info
 ```info(message: string, title?: string): Promise;```
 
+![info dialog](img/infomessage.png "info dialog")
+
+
 ### success
 ```success(message: string, title?: string): Promise;```
 
