@@ -2,9 +2,15 @@
 
 # Frontend Built-in Functions
 
+* ajax
+* toAbsAppPath
+
 #### [Auth](#auth-1)
+* areAllGranted
 * [clearToken](#cleartoken)
 * [getToken](#gettoken)
+* isAnyGranted
+* isGranted
 * [setToken](#settoken)
 
 #### [Clock](#clock)
@@ -157,10 +163,31 @@ Saves auth token.
 
 ## Notify
 
+Generate a pop-up notification in the bottom-right corner that doesn't prevent the user from using the rest of the system. After a short time the notification fades away.
+
+Multiple notifications above each other and can be clicked on to make them fade immediately.
+
+### error
+```abp.notify.error(message: string, title?: string, options?: any): void;```
+
+Generates an error notification
+
 ### info
 ```abp.notify.info(message: string, title?: string, options?: any): void;```
 
+Generates an information notification
+
 ![info notification](img/infonotification.png "info notification")
+
+### success
+```success(message: string, title?: string, options?: any): void;```
+
+Generates a success notification
+
+### warn
+```abp.notify.warn(message: string, title?: string, options?: any): void;```
+
+Generates a warning notification
 
 ## Utils
 
