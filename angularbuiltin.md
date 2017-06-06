@@ -1,7 +1,8 @@
 [< Back to tutorial](README.md)
 
 # Angular Built-in Functions
-#### [Auth](#auth)
+
+#### [Auth](#auth-1)
 * [clearToken](#cleartoken)
 * [getToken](#gettoken)
 * [setToken](#settoken)
@@ -25,7 +26,7 @@
 * isCurrentCulture
 * localize
 
-#### [Log](#log)
+#### [Log](#log-1)
 * [debug](#debug)
 * [error](#error)
 * [fatal](#fatal)
@@ -33,7 +34,7 @@
 * [log](#log)
 * [warn](#warn)
 
-#### [Message](#message)
+#### [Message](#message-1)
 * [confirm](#confirm)
 * [error](#error)
 * [info](#info)
@@ -94,21 +95,27 @@ _none_
 * truncateStringWithPostfix
 
 ## Auth
+
 ### clearToken
 ```abp.auth.clearToken(): void;```
+
 ### getToken
 ```abp.auth.getToken(): string;```
+
 ### setToken
 ```abp.auth.setToken(authToken: string, expireDate?: Date): void;```
 Saves auth token.
 
 ## Clock
+
 ### normalize
 ```normalize(date: Date): Date;```
+
 ### now
 ```now(): Date;```
 
 ## Log
+
 ### debug
 ```debug(logObject?: any): void;```
 
@@ -128,8 +135,10 @@ Saves auth token.
 ```warn(logObject?: any): void;```
 
 ## Message
+
 ### confirm
 ```confirm(message: string, callback?: (result: boolean) => void): Promise;```
+
 ```confirm(message: string, title?: string, callback?: (result: boolean) => void): Promise;```
 
 ### error
@@ -145,16 +154,19 @@ Saves auth token.
 ```warn(message: string, title?: string): Promise;```
 
 ## Utils
+
 ### getCookieValue
 ```abp.utils.getCookieValue(key: string): string;```
+
 Gets a cookie with given key.
 This is a simple implementation created to be used by ABP.
 Please use a complete cookie library if you need.
+
 ### setCookieValue
 ```abp.utils.setCookieValue(key: string, value: string, expireDate?: Date, path?: string): void;```
+
 Sets a cookie value for given key.
 This is a simple implementation created to be used by ABP.
 Please use a complete cookie library if you need.
-
 
 [< Back to tutorial](README.md)
