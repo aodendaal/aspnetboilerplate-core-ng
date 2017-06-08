@@ -2,15 +2,15 @@
 
 # Frontend Built-in Functions
 
-* ajax
-* toAbsAppPath
+* [ajax](#ajax)
+* [toAbsAppPath](#toabsapppath)
 
 #### [Auth](#auth-1)
-* areAllGranted
+* [areAllGranted](#areallgranted)
 * [clearToken](#cleartoken)
 * [getToken](#gettoken)
-* isAnyGranted
-* isGranted
+* [isAnyGranted](#isanygranted)
+* [isGranted](#isgranted)
 * [setToken](#settoken)
 
 #### [Clock](#clock)
@@ -42,10 +42,10 @@
 
 #### [Message](#message-1)
 * [confirm](#confirm)
-* [error](#error)
-* [info](#info)
+* [error](#error-1)
+* [info](#info-1)
 * [success](#success)
-* [warn](#warn)
+* [warn](#warn-1)
 
 #### MultiTenancy
 * getTenantIdCookie
@@ -60,11 +60,11 @@ _none_
 * getUserNotificationStateAsString
 * showUiNotifyForUserNotification
 
-#### Notify
-* error
-* info
-* success
-* warn
+#### [Notify](#notify-1)
+* [error](#error-2)
+* [info](#info-2)
+* [success](#success-1)
+* [warn](#warn-2)
 
 #### Security
 * [antiForgery.getToken](#antiforgerygetoken)
@@ -100,13 +100,28 @@ _none_
 * truncateString
 * truncateStringWithPostfix
 
+## _root_
+### ajax
+Used to call server-side services using AJAX and evaluate the return value. Since ASP.NET Boilerplate server-side code returns a standard response for AJAX calls, it's suggested to use this method to handle the standard return value.
+
+### toAbsAppPath
+
 ## Auth
+
+### areAllGranted
+```abp.auth.areAllGranted(...args: string[]): boolean;```
 
 ### clearToken
 ```abp.auth.clearToken(): void;```
 
 ### getToken
 ```abp.auth.getToken(): string;```
+
+### isAnyGranted
+```abp.auth.isAnyGranted(...args: string[]): boolean;```
+
+### isGranted
+```abp.isGranted(permissionName: string): boolean;```
 
 ### setToken
 ```abp.auth.setToken(authToken: string, expireDate?: Date): void;```
@@ -119,6 +134,9 @@ Saves auth token.
 
 ### now
 ```now(): Date;```
+
+## Event
+Used to register to and trigger client side global events.
 
 ## Log
 
@@ -162,6 +180,7 @@ Saves auth token.
 ```abp.message.warn(message: string, title?: string): Promise;```
 
 ## Notify
+Used to show auto-disappearing notifications.
 
 Generate a pop-up notification in the bottom-right corner that doesn't prevent the user from using the rest of the system. After a short time the notification fades away.
 
@@ -189,7 +208,25 @@ Generates a success notification
 
 Generates a warning notification
 
+## UI
+Used to make an area (a div, a form, entire page...) blocked for user inputs. Also used to make an area busy (with a busy indicator).
+
+### block
+Adds a transparent overlay to the document or element so the user cannot interact with it.
+
+### clearBusy
+Removes the busy overlay from the document or element.
+
+### setBusy
+Adds a semi-transparent overlay with a busy indicator to the document or element and prevents the user from interacting with the document or element.
+
+### unblock
+Removes the transparent overlay from the document or element.
+
 ## Utils
+
+### formatString
+Similar to ```string.Format``` in C#
 
 ### getCookieValue
 ```abp.utils.getCookieValue(key: string): string;```

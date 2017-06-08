@@ -25,17 +25,22 @@ RxJS is a library for composing asynchronous and event-based programs by using o
 
 # Main Articles
 * [How to Initialize and Run a Clean Template](cleantemplate.md)
+* [Project Architecture](projectarchitecture.md)
+* [Adding Email Verification](emailverification.md) - A practical exercise extending ASP\.NET Boilerplate
 
-## Backend
-* [How to Create an Entity](entity.md)
+## Infrastructure Layer
 * How to Update the Database
+
+## Domain Layer
+* [How to Create an Entity](entity.md)
+
+## Application Layer
 * [How to Create an Application Service](applicationservice.md)
 
-## Frontend
+## Presentation Layer
 * How to Create a Component
 * [Built-in Functions](angularbuiltin.md)
 
 # Other Articles
-* [Project Architecture](projectarchitecture.md)
 * [Localization](localization.md)
 * [User roles and permissions](usermanager.md)
