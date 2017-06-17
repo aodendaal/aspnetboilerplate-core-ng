@@ -1,18 +1,22 @@
 [< Back to tutorial](README.md)
+# Deploying to Azure
 
-# Two Site Deployment
-## Build Angular Project
+This article describes how to deploy ASP\.NET Boilerplate Core & Angular to Microsoft Azure.
+
+## Two Site Deployment
+
+### App Service Config
+Enable CORS on the server AppService.
+
+### Build Angular Project
 Run ```npm run ng build```
 
-## Create web.config
+### Create web.config
+Create a __web.config__ file in the newly created __/dist__ directory in __/angular__. Populate with config file with the code below. This will allow Angular routing.
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <configuration>
-
-  <!--
-    Configure your application settings in appsettings.json. Learn more at http://go.microsoft.com/fwlink/?LinkId=786380
-  -->
-
   <system.webServer>
     <staticContent>
       <remove fileExtension=".json" />
@@ -37,30 +41,29 @@ Run ```npm run ng build```
 </configuration>
 ```
 
-## FTP to App Service
+### FTP to App Service
 
-# One Site Deployment - UNTESTED
+## One Site Deployment - UNTESTED
 * Merge Solutions
 * Deploy Frontend
 * Deploy Backend
 * Deploy Database
 * Setup VSTS build automation
 
-## Merge Solutions
+### Merge Solutions
 [ASP\.NET Zero article](https://www.aspnetzero.com/Documents/Merge-Angular-Client-Server)
 
-## Deploy Frontend
+### Deploy Frontend
 * Run ```npm run ng build```
 * FTP to server
 
-## Deploy Backend
+### Deploy Backend
 * Publish using Visual Studio 2017
 
-## Deploy Database
+### Deploy Database
 * Update appsettings.json connection string
 * Use .NET Core CLI
 
-## Setup VSTS build automation
-
+### Setup VSTS build automation
 
 [< Back to tutorial](README.md)

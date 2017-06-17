@@ -1,5 +1,5 @@
 # ASP\.NET Boilerplate Tutorials
-This is a set of tutorials I've created for my junior team using [ASP\.NET Boilerplate](https://www.aspnetboilerplate.com). Specifically ASP\.NET Boilerplate using ASP\.NET Core running on \.NET Core with the Angular 2 SPA.
+This is a set of tutorials I've created for my junior team using [ASP\.NET Boilerplate](https://www.aspnetboilerplate.com). Specifically ASP\.NET Boilerplate using ASP\.NET Core running on \.NET Core with the Angular 2 SPA (also known as ASP\.NET Boilerplate Core & Angular).
 
 ## Prerequisites Tools
 * Visual Studio 2017
