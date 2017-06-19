@@ -3,15 +3,45 @@
 
 This article describes how to deploy ASP\.NET Boilerplate Core & Angular to Microsoft Azure.
 
-## Two Site Deployment
+* Two Site Deployment
+* One Site Deployment
 
-### App Service Config
+## Two Site Deployment
+This solution uses two different AppServices (one for the backend and one for the frontend) and a SQL database.
+
+* __Backend__
+  * 1. Create server App Service & Database
+  * 2. Create publish profile in Visual Studio 2017
+  * 3. Update Startup for CORS
+  * 4. Update Connection Strings
+  * 3. Publish from Visual Studio 2017
+* __Frontend__
+  * 1. Create client App Service
+  * 2. Enable CORS on server App Service
+  * 3. Update appconfig.json
+  * 4. Build Angular project
+  * 5. Create web.config
+  * 6. FTP to App Service
+
+### Backend
+TODO
+
+### Frontend
+Now it's upload the Angular project to Azure.
+
+#### 1. Create client App Service
+TODO
+
+#### 2. Enable CORS App Service Config
 Enable CORS on the server AppService.
 
-### Build Angular Project
-Run ```npm run ng build```
+#### 3. Update appconfig.json
+Edit __/angular/src/appconfig.json__ and set ```remoteServiceBaseUrl``` and ```appBaseUrl```.
 
-### Create web.config
+#### 4. Build Angular Project
+Run ```npm run ng build``` to create a distribution of the Angular project.
+
+#### 5. Create web.config
 Create a __web.config__ file in the newly created __/dist__ directory in __/angular__. Populate with config file with the code below. This will allow Angular routing.
 
 ```xml
@@ -41,7 +71,8 @@ Create a __web.config__ file in the newly created __/dist__ directory in __/angu
 </configuration>
 ```
 
-### FTP to App Service
+#### 6. FTP to App Service
+TODO
 
 ## One Site Deployment - UNTESTED
 * Merge Solutions

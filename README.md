@@ -10,18 +10,21 @@ This is a set of tutorials I've created for my junior team using [ASP\.NET Boile
 ### \.NET Core
 \.NET Core can be thought of as a cross-platform version of the \.NET Framework supporting Windows, macOS and Linux, and can be used in device, cloud, and embedded/IoT scenarios. It implements the \.NET Standard Library specification.
 
-### ASP\.NET Core
+#### ASP\.NET Core
 ASP\.NET Core is no longer based on __System.Web.dll__
 ASP\.NET Core apps can run on \.NET Core or on the full \.NET Framework
 
-### Entity Framework Core
+#### Entity Framework Core
 The technology formerly known as Entity Framework 7 (EF7) was renamed to Entity Framework Core (EF Core) in early 2016 but can run on the full \.NET Framework or on \.NET Core.
 
 ### Angular
 Angular is an open-source frontend web application platform
 
-### RxJS
+#### RxJS
 RxJS is a library for composing asynchronous and event-based programs by using observable sequences.
+
+#### ngx-bootstrap
+ngx-bootstrap contains all core (and not only) Bootstrap components powered by Angular. This also includes [moment.js](http://momentjs.com/) for parsing and manipulating dates.
 
 # Main Articles
 * [How to Initialize and Run a Clean Template](cleantemplate.md)

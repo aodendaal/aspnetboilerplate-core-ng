@@ -11,7 +11,7 @@
 With regards to how the layers are implemented in our ASP\.NET Boilerplate template, the Presentation Layer is handled in the Angular project and the other layers in the ASP\.NET Core solution.
 
 ## Presentation Layer
-TODO
+In our template this is handled by entirely by Angular.
 
 ## Application & Domain Layers
 
@@ -20,15 +20,23 @@ An ASP\.NET Boilerplate application is composed of modules. A module registers s
 
 So when you download a template, each project in the solution is a module and these have already been composed to create a basic application.
 
-### Application Service
+### Application & Domain Service
 Application services get and return Data Transfer Objects (DTOs)
 An application service is used by the presentation layer to interact with the domain layer.
+In our template the application services and DTO classes are in the __.Application__ project
 
-### Domain Service
 Domain Services get and return domain objects (entities or value types).
 A domain service can be used by other domain services or by an application service but it cannot be used by the presentation layer.
+In our template the domain services and entities are in the __.Core__ project
+
+Both inherit from ```AbpServiceBase``` providing access to:
+* SettingsManager
+* UnitOfWorkManager
+* LocalizationManager
+* Logger
+* ObjectMapper
 
 ## Infrastructure Layer
-TODO
+The __.EntityFrameworkCore__ and __.Web.Host__ projects represent the infrastructure layer.
 
 [< Back to tutorial](README.md)
