@@ -69,6 +69,6 @@ var key = _appConfiguration["SendGridProvider:APIKey"];
 * [Essential .NET - Configuration in .NET Core](https://msdn.microsoft.com/en-us/magazine/mt632279.aspx)
 
 ## See Also
-* [ASP\.NET Boilerplate Tutorials](readme.md)
+* [ASP\.NET Boilerplate Tutorials](README.md)
 * [Project Architecture](projectarchitecture.md)
 * [Adding Email Verification](emailverification.md)
