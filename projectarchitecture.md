@@ -1,5 +1,3 @@
-[< Back to tutorial](README.md)
-
 # Project Architecture
 
 ## Layers
@@ -11,7 +9,7 @@
 With regards to how the layers are implemented in our ASP\.NET Boilerplate template, the Presentation Layer is handled in the Angular project and the other layers in the ASP\.NET Core solution.
 
 ## Presentation Layer
-In our template this is handled by entirely by Angular.
+In our template this is handled entirely by Angular.
 
 ## Application & Domain Layers
 
@@ -39,4 +37,8 @@ Both inherit from ```AbpServiceBase``` providing access to:
 ## Infrastructure Layer
 The __.EntityFrameworkCore__ and __.Web.Host__ projects represent the infrastructure layer.
 
-[< Back to tutorial](README.md)
+## See Also
+* [ASP\.NET Boilerplate Tutorials](readme.md)
+* [Module Configuration](moduleconfig.md)
+* [How to Create an Domain Entity](entity.md)
+* [How to Create an Application Service](applicationservice.md)
