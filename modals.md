@@ -1,32 +1,108 @@
 # Creating Modal Dialogs
-This article applies to ABP templates using __ngx-bootstrap__.
+This article applies to ABP templates using __ngx-bootstrap__. You can find examples of modal dialogs in a clean template on _app/users_ and _app/tenants_ when creating a new user or tenant respectively.
 
-### Example
+### Calling component
 ```html
 <!-- Trigger the modal with a button -->
-<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+<button data-toggle="modal" class="btn btn-primary pull-right" (click)="createUser()"><i class="fa fa-plus"></i> {{l('CreateNewUser')}}</button>
+```
 
-<!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
+```javascript
+import { Component, Injector, ViewChild } from '@angular/core';
+import { AppComponentBase } from '@shared/app-component-base';
+import { appModuleAnimation } from '@shared/animations/routerTransition';
+import { UserServiceProxy, UserListDto } from '@shared/service-proxies/service-proxies';
 
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Modal Header</h4>
-      </div>
-      <div class="modal-body">
-        <p>Some text in the modal.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
+<mark>import { CreateUserModalComponent } from './create-user-modal.component';</mark>
+
+@Component({
+    templateUrl: './users.component.html',
+    animations: [appModuleAnimation()]
+})
+export class UsersComponent extends AppComponentBase implements OnInit {
+
+    @ViewChild('createUserModal') createUserModal: CreateUserModalComponent;
+    users: UserListDto[] = [];
+
+    constructor(
+        injector: Injector,
+        private _userService: UserServiceProxy
+    ) {
+        super(injector);
+    }
+
+    createUser(): void {
+        this.createUserModal.show();
+    }
+}
+```
+
+### Modal component
+```html
+<div bsModal #createUserModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="createUserModal" aria-hidden="true" [config]="{backdrop: 'static'}">
+    <div class="modal-dialog">
+        <div class="modal-content">
+          ...
+        </div>
     </div>
-
-  </div>
 </div>
 ```
+
+```javascript
+import { Component, ViewChild, Injector, Output, EventEmitter, ElementRef } from '@angular/core';
+import { ModalDirective } from 'ngx-bootstrap';
+import { UserServiceProxy, CreateUserInput } from '@shared/service-proxies/service-proxies';
+import { AppComponentBase } from '@shared/app-component-base';
+import { AppConsts } from '@shared/AppConsts';
+
+import * as _ from "lodash";
+
+@Component({
+    selector: 'createUserModal',
+    templateUrl: './create-user-modal.component.html'
+})
+export class CreateUserModalComponent extends AppComponentBase {
+
+    @ViewChild('createUserModal') modal: ModalDirective;
+
+    @Output() modalSave: EventEmitter<any> = new EventEmitter<any>();
+
+    active: boolean = false;
+    saving: boolean = false;
+    user: CreateUserInput = null;
+
+    constructor(
+        injector: Injector,
+        private _userService: UserServiceProxy
+    ) {
+        super(injector);
+    }
+
+    show(): void {
+        this.active = true;
+        this.modal.show();
+        this.user = new CreateUserInput({ isActive: false });
+    }
+
+    save(): void {
+        this.user.userName = this.user.emailAddress;
+        this.saving = true;
+        this._userService.createUser(this.user)
+            .finally(() => { this.saving = false; })
+            .subscribe(() => {
+                this.notify.info(this.l('SavedSuccessfully'));
+                this.close();
+                this.modalSave.emit(null);
+            });
+    }
+
+    close(): void {
+        this.active = false;
+        this.modal.hide();
+    }
+}
+```
+
 
 ## See Also
 * [ASP\.NET Boilerplate Tutorials](readme.md)
