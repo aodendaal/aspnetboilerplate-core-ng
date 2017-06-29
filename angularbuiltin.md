@@ -1,6 +1,5 @@
-[< Back to tutorial](README.md)
-
 # Frontend Built-in Functions
+These are functions provided by ABP for the Angular frontend.
 
 * [ajax](#ajax)
 * [toAbsAppPath](#toabsapppath)
@@ -242,4 +241,7 @@ Sets a cookie value for given key.
 This is a simple implementation created to be used by ABP.
 Please use a complete cookie library if you need.
 
-[< Back to tutorial](README.md)
+## See Also
+* [ASP\.NET Boilerplate Tutorials](readme.md)
+* [Creating Modal Dialogs](modals.md)
+* [Project Architecture](projectarchitecture.md)

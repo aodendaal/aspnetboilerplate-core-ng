@@ -31,7 +31,7 @@ The template I'm using uses ngx-bootstrap which contains all core (and not only)
 ## Main Articles
 * [How to Initialize and Run a Clean Template](cleantemplate.md)
 * [Project Architecture](projectarchitecture.md)
-  * [Module Configuration](moduleconfig.md)
+* [Reading Module Configuration From AppSettings](moduleconfig.md)
 * [Adding Email Verification](emailverification.md) - A practical exercise extending ASP\.NET Boilerplate
 * [Deploying to Azure](deployment.md)
 
@@ -47,6 +47,7 @@ The template I'm using uses ngx-bootstrap which contains all core (and not only)
 ## Presentation Layer
 * How to Create a Component
 * [Built-in Functions](angularbuiltin.md)
+* [Creating modal dialogs](modals.md)
 
 # Other Articles
 * [Localization](localization.md)

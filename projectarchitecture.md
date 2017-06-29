@@ -39,6 +39,6 @@ The __.EntityFrameworkCore__ and __.Web.Host__ projects represent the infrastruc
 
 ## See Also
 * [ASP\.NET Boilerplate Tutorials](readme.md)
-* [Module Configuration](moduleconfig.md)
+* [Reading Module Configuration From AppSettings](moduleconfig.md)
 * [How to Create an Domain Entity](entity.md)
 * [How to Create an Application Service](applicationservice.md)
