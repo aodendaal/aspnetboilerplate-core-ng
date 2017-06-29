@@ -13,7 +13,7 @@ import { AppComponentBase } from '@shared/app-component-base';
 import { appModuleAnimation } from '@shared/animations/routerTransition';
 import { UserServiceProxy, UserListDto } from '@shared/service-proxies/service-proxies';
 
-<mark>import { CreateUserModalComponent } from './create-user-modal.component';</mark>
+<b style="background-color:#FFFF00;">import { CreateUserModalComponent } from './create-user-modal.component';</b>
 
 @Component({
     templateUrl: './users.component.html',
