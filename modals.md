@@ -7,7 +7,7 @@ This article applies to ABP templates using __ngx-bootstrap__. You can find exam
 <button data-toggle="modal" class="btn btn-primary pull-right" (click)="createUser()"><i class="fa fa-plus"></i> {{l('CreateNewUser')}}</button>
 ```
 
-```javascript
+<pre lang="javascript">
 import { Component, Injector, ViewChild } from '@angular/core';
 import { AppComponentBase } from '@shared/app-component-base';
 import { appModuleAnimation } from '@shared/animations/routerTransition';
@@ -35,7 +35,7 @@ export class UsersComponent extends AppComponentBase implements OnInit {
         this.createUserModal.show();
     }
 }
-```
+</pre>
 
 ### Modal component
 ```html
