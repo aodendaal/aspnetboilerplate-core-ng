@@ -1,5 +1,3 @@
-[< Back to tutorial](README.md)
-
 # Creating an Application Service
 * [Unit of Work](#unit-of-work)
 * [Hide from Controller](#hide-from-controller)
@@ -15,4 +13,16 @@ The __.Web.Core__ module is configured to generate WebAPI controllers for any ap
 [RemoteService(isEnabled: false)]
 ```
 
-[< Back to tutorial](README.md)
+## Function Names
+HTTP verbs are determined by method name prefixes, otherwise __Post__ is used as default HTTP verb. You can also override or specify a preferred method using the the HTTP-verb attributes found in Microsoft.AspNet.WebApi.Core.
+
+* __Get:__ Used if method name starts with 'Get'.
+* __Put:__ Used if method name starts with 'Put' or 'Update'.
+* __Delete:__ Used if method name starts with 'Delete' or 'Remove'.
+* __Post:__ Used if method name starts with 'Post', 'Create' or 'Insert'.
+* __Patch:__ Used if method name starts with 'Patch'.
+
+## See Also
+* [ASP\.NET Boilerplate Tutorials](readme.md)
+* [Project Architecture](projectarchitecture.md)
+* [Frontend Built-in Functions](angularbuiltin.md)

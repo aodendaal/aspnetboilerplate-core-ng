@@ -7,35 +7,27 @@ This article applies to ABP templates using __ngx-bootstrap__. You can find exam
 <button data-toggle="modal" class="btn btn-primary pull-right" (click)="createUser()"><i class="fa fa-plus"></i> {{l('CreateNewUser')}}</button>
 ```
 
-<pre lang="javascript">
+```javascript
 import { Component, Injector, ViewChild } from '@angular/core';
-import { AppComponentBase } from '@shared/app-component-base';
-import { appModuleAnimation } from '@shared/animations/routerTransition';
-import { UserServiceProxy, UserListDto } from '@shared/service-proxies/service-proxies';
+...
 
-<b style="background-color:#FFFF00;">import { CreateUserModalComponent } from './create-user-modal.component';</b>
+import { CreateUserModalComponent } from './create-user-modal.component';
 
 @Component({
     templateUrl: './users.component.html',
     animations: [appModuleAnimation()]
 })
-export class UsersComponent extends AppComponentBase implements OnInit {
+export class UsersComponent extends AppComponentBase {
 
     @ViewChild('createUserModal') createUserModal: CreateUserModalComponent;
-    users: UserListDto[] = [];
 
-    constructor(
-        injector: Injector,
-        private _userService: UserServiceProxy
-    ) {
-        super(injector);
-    }
+    ...
 
     createUser(): void {
         this.createUserModal.show();
     }
 }
-</pre>
+```
 
 ### Modal component
 ```html
@@ -51,12 +43,7 @@ export class UsersComponent extends AppComponentBase implements OnInit {
 ```javascript
 import { Component, ViewChild, Injector, Output, EventEmitter, ElementRef } from '@angular/core';
 import { ModalDirective } from 'ngx-bootstrap';
-import { UserServiceProxy, CreateUserInput } from '@shared/service-proxies/service-proxies';
-import { AppComponentBase } from '@shared/app-component-base';
-import { AppConsts } from '@shared/AppConsts';
-
-import * as _ from "lodash";
-
+...
 @Component({
     selector: 'createUserModal',
     templateUrl: './create-user-modal.component.html'
@@ -75,7 +62,7 @@ export class CreateUserModalComponent extends AppComponentBase {
         injector: Injector,
         private _userService: UserServiceProxy
     ) {
-        super(injector);
+        super(injector);.
     }
 
     show(): void {
