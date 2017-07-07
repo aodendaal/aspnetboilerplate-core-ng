@@ -8,19 +8,19 @@ It's technically possible to merge the angular site and ASP\.NET Core site toget
 Possibly an easier process is a two site deployment with two different AppServices (one for the backend and one for the frontend) and a SQL database.
 
 1. __Backend__
-  1. Create server App Service & Database
-  2. Create publish profile in Visual Studio 2017
-  3. Update Startup for CORS
-  4. Update Connection Strings
-  5. Publish from Visual Studio 2017
-  6. Run database update
+  1.1. Create server App Service & Database
+  1.2. Create publish profile in Visual Studio 2017
+  1.3. Update Startup for CORS
+  1.4. Update Connection Strings
+  1.5. Publish from Visual Studio 2017
+  1.6. Run database update
 2. __Frontend__
-  1. Create client App Service
-  2. Enable CORS on server App Service
-  3. Update appconfig.json
-  4. Build Angular project
-  5. Create web.config
-  6. FTP to App Service
+  2.1. Create client App Service
+  2.2. Enable CORS on server App Service
+  2.3. Update appconfig.json
+  2.4. Build Angular project
+  2.5. Create web.config
+  2.6. FTP to App Service
 
 ### Backend
 
