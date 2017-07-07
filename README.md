@@ -26,17 +26,17 @@ Angular is an open-source frontend web application platform
 RxJS is a library for composing asynchronous and event-based programs by using observable sequences.
 
 ### ngx-bootstrap
-The template I'm using uses ngx-bootstrap which contains all core (and not only) Bootstrap components powered by Angular. This also includes [moment.js](http://momentjs.com/) for parsing and manipulating dates. Later versions use Material
+The template I'm using uses [ngx-bootstrap](http://valor-software.com/ngx-bootstrap/#/) which contains all core (and not only) Bootstrap components powered by Angular. This also includes [moment.js](http://momentjs.com/) for parsing and manipulating dates. Later versions use Material
 
 ## Main Articles
 * [How to Initialize and Run a Clean Template](cleantemplate.md)
 * [Project Architecture](projectarchitecture.md)
 * [Reading Module Configuration From AppSettings](moduleconfig.md)
-* [Adding Email Verification](emailverification.md) - A practical exercise extending ASP\.NET Boilerplate
 * [Deploying to Azure](deployment.md)
 
 ## Infrastructure Layer
 * How to Update the Database
+* [Adding Email Verification using SendGrid](emailverification.md) - A practical exercise extending ASP\.NET Boilerplate
 
 ## Domain Layer
 * [How to Create an Entity](entity.md)
@@ -48,6 +48,8 @@ The template I'm using uses ngx-bootstrap which contains all core (and not only)
 * How to Create a Component
 * [Built-in Functions](angularbuiltin.md)
 * [Creating modal dialogs](modals.md)
+* Adding a datepicker
+* Adding a searchable/type-ahead drop-down list
 
 # Other Articles
 * [Localization](localization.md)

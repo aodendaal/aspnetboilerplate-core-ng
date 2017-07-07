@@ -7,6 +7,15 @@ By default functions in an application service are transactional, meaning if the
 ```csharp
 [UnitOfWork(IsDisabled: true)]
 ```
+
+You can also use Unit of Work to impersonate another tenant
+
+```csharp
+using (_unitOfWorkManager.Current.SetTenantId(input.TentantId))
+{
+} 
+```
+
 ## Hide from Controller
 The __.Web.Core__ module is configured to generate WebAPI controllers for any application services found in __.Application__. To prevent a specific application service or function in a service from being generated, add the ```RemoteService``` attibute and set ```isEnabled``` to ```false```.
 ```csharp
@@ -23,6 +32,6 @@ HTTP verbs are determined by method name prefixes, otherwise __Post__ is used as
 * __Patch:__ Used if method name starts with 'Patch'.
 
 ## See Also
-* [ASP\.NET Boilerplate Tutorials](readme.md)
+* [ASP\.NET Boilerplate Tutorials](README.md)
 * [Project Architecture](projectarchitecture.md)
 * [Frontend Built-in Functions](angularbuiltin.md)

@@ -1,19 +1,11 @@
-[< Back to tutorial](README.md)
 
-# Adding Email Verification
+# Adding Email Verification using SendGrid
 
 ASP\.NET Boilerplate (at time of writing) does not include email verification when a user registers (it is available in the paid-for version ASP\.NET Zero).
 
 This is a perfect opportunity to dive into ABP and understand how it's put together by adding our own email verification.
 
 This exercise is for ASP\.NET Boilerplate Core & Angular.
-
-## Contents
-* [Initialization](#initialization)
-* Infrastructure Layer - Creating an Email Module
-* Domain Layer - Updating the Registration Manager
-* Application Layer - 
-* Presentation Layer - 
 
 ## Initialization
 TODO
@@ -30,4 +22,7 @@ TODO
 ## Presentation Layer - 
 TODO
 
-[< Back to tutorial](README.md)
+## See Also
+* [ASP\.NET Boilerplate Tutorials](README.md)
+* [How to Initialize and Run a Clean Template](cleantemplate.md)
+* [Deploying to Azure](deployment.md)
