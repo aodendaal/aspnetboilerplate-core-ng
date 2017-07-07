@@ -7,14 +7,14 @@ It's technically possible to merge the angular site and ASP\.NET Core site toget
 ## Two Site Deployment
 Possibly an easier process is a two site deployment with two different AppServices (one for the backend and one for the frontend) and a SQL database.
 
-* __Backend__
+1. __Backend__
   1. Create server App Service & Database
   2. Create publish profile in Visual Studio 2017
   3. Update Startup for CORS
   4. Update Connection Strings
   5. Publish from Visual Studio 2017
   6. Run database update
-* __Frontend__
+2. __Frontend__
   1. Create client App Service
   2. Enable CORS on server App Service
   3. Update appconfig.json
@@ -24,22 +24,22 @@ Possibly an easier process is a two site deployment with two different AppServic
 
 ### Backend
 
-#### 6. Run database update
+#### 1.vi. Run database update
 Unfortunately you must manually run the database updates on the server. Luckily, we can use the EF CLI in the .EntityFrameworkCore project to update the server.
 
 ### Frontend
 Now let's upload the Angular project to Azure.
 
-#### 2. Enable CORS App Service Config
+#### 2.ii. Enable CORS App Service Config
 Enable CORS on the server AppService.
 
-#### 3. Update appconfig.json
+#### 2.iii. Update appconfig.json
 Edit __/angular/src/assets/appconfig.json__ and set ```remoteServiceBaseUrl``` and ```appBaseUrl```.
 
-#### 4. Build Angular Project
+#### 2.iv. Build Angular Project
 Run ```npm run ng build``` to create a distribution of the Angular project.
 
-#### 5. Create web.config
+#### 2.v. Create web.config
 Create a __web.config__ file in the newly created __/dist__ directory in __/angular__. Populate with config file with the code below. This will allow Angular routing.
 
 ```xml
