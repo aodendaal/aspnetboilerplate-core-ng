@@ -7,20 +7,20 @@ It's technically possible to merge the angular site and ASP\.NET Core site toget
 ## Two Site Deployment
 Possibly an easier process is a two site deployment with two different AppServices (one for the backend and one for the frontend) and a SQL database.
 
-1. __Backend__
-  1.1. Create server App Service & Database
-  1.2. Create publish profile in Visual Studio 2017
-  1.3. Update Startup for CORS
-  1.4. Update Connection Strings
-  1.5. Publish from Visual Studio 2017
-  1.6. Run database update
-2. __Frontend__
-  2.1. Create client App Service
-  2.2. Enable CORS on server App Service
-  2.3. Update appconfig.json
-  2.4. Build Angular project
-  2.5. Create web.config
-  2.6. FTP to App Service
+* __Backend__
+  * Create server App Service & Database
+  * Create publish profile in Visual Studio 2017
+  * Update Startup for CORS
+  * Update Connection Strings
+  * Publish from Visual Studio 2017
+  * Run database update
+* __Frontend__
+  * Create client App Service
+  * Enable CORS on server App Service
+  * Update appconfig.json
+  * Build Angular project
+  * Create web.config
+  * FTP to App Service
 
 ### Backend
 
@@ -69,9 +69,14 @@ Create a __web.config__ file in the newly created __/dist__ directory in __/angu
 </configuration>
 ```
 
-## Troubleshooting
-
+## Troubleshooting the Backend
 ![A useless error message](img/uselesserror.png "A useless error message")
+
+The error message above is what you can expect to see if there was a problem deploying the backend to Azure.
+
+It is not necessary to install Application Insights for ABP on Azure because of the logging already implemented in the template.
+
+Login via FTP to the backend webapp and navigate to ```/site/wwwroot/App_Data/Logs``` and download **Logs.txt**. Open the text file in your favourite text editor and scroll up from the bottom of the file until you find an exception.
 
 ## See Also
 * [ASP\.NET Boilerplate Tutorials](README.md)
