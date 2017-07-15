@@ -26,13 +26,16 @@ Angular is an open-source frontend web application platform
 RxJS is a library for composing asynchronous and event-based programs by using observable sequences.
 
 ### ngx-bootstrap
-The template I'm using uses [ngx-bootstrap](http://valor-software.com/ngx-bootstrap/#/) which contains all core (and not only) Bootstrap components powered by Angular. This also includes [moment.js](http://momentjs.com/) for parsing and manipulating dates. Later versions use Material
+The template I'm using uses [ngx-bootstrap](http://valor-software.com/ngx-bootstrap/#/) which contains all core (and not only) Bootstrap components powered by Angular. This also includes [moment.js](http://momentjs.com/) for parsing and manipulating dates. Later versions of ABP use [AdminBSB](https://github.com/gurayyarar/AdminBSBMaterialDesign), a free admin panel that is based on Bootstrap 3.x with Material Design.
 
 ## Main Articles
 * [How to Initialize and Run a Clean Template](cleantemplate.md)
 * [Project Architecture](projectarchitecture.md)
 * [Reading Module Configuration From AppSettings](moduleconfig.md)
+
+## Deployment
 * [Deploying to Azure](deployment.md)
+* __2.1.2__ Using Docker to deploy to Azure
 
 ## Infrastructure Layer
 * How to Update the Database
@@ -40,6 +43,8 @@ The template I'm using uses [ngx-bootstrap](http://valor-software.com/ngx-bootst
 
 ## Domain Layer
 * [How to Create an Entity](entity.md)
+* [User roles and permissions](usermanager.md)
+* [Localization](localization.md)
 
 ## Application Layer
 * [How to Create an Application Service](applicationservice.md)
@@ -50,7 +55,4 @@ The template I'm using uses [ngx-bootstrap](http://valor-software.com/ngx-bootst
 * [Creating modal dialogs](modals.md)
 * Adding a datepicker
 * Adding a searchable/type-ahead drop-down list
-
-# Other Articles
-* [Localization](localization.md)
-* [User roles and permissions](usermanager.md)
+* __2.1.2__ [Updating the Menu](menu212.md)

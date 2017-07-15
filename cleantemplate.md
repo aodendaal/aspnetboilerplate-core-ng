@@ -1,5 +1,3 @@
-[< Back to tutorial](README.md)
-
 # How to Initialize and Run a Clean Template
 1. [Download ASP\.NET Boilerplate template](#1-download-template)
 2. [Fix EFCore Versions & Add DotNet Tooling](#2-fix-efcore-versions--add-dotnet-tooling)
@@ -15,6 +13,8 @@
 Goto the [ASP.NET Boilerplate](https://www.aspnetboilerplate.com) website and download the ASP\.NET Core 1.x template using the .NET Core 1.1 framework, select Single Page Web Application using Angular 2 and make sure Include module-zero is checked.
 
 ## 2. Fix EFCore Versions & Add DotNet Tooling
+_This step is specific to ABP 2.0.2 and can be ignored for later versions._
+
 Edit _project.EntityFrameworkCore.csproj_ found in the __/aspnet-core/src/project.EntityFrameworkCore__ directory and update the references to the ones below:
 ```xml
   <ItemGroup>
@@ -85,4 +85,7 @@ http://localhost:4200
 > At this point we've downloaded, initialized and run the bare template. Well done on making it this far.
 > Now we can start to create our own customizations on top of the ASP\.NET Boilerplate platform.
 
-[< Back to tutorial](README.md)
+## See Also
+* [ASP\.NET Boilerplate Tutorials](README.md)
+* [Project Architecture](projectarchitecture.md)
+* [Reading Module Configuration From AppSettings](moduleconfig.md)

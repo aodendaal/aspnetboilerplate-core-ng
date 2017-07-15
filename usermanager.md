@@ -1,5 +1,3 @@
-[< Back to tutorial](README.md)
-
 # User Roles and Permissions
 
 ## UserManager
@@ -8,4 +6,7 @@
 * RemoveFromRoleAsync
 * RemoveFromRolesAsync
 
-[< Back to tutorial](README.md)
+## See Also
+* [ASP\.NET Boilerplate Tutorials](README.md)
+* [Project Architecture](projectarchitecture.md)
+* [How to Create an Entity](entity.md)

@@ -81,4 +81,4 @@ Login via FTP to the backend webapp and navigate to ```/site/wwwroot/App_Data/Lo
 ## See Also
 * [ASP\.NET Boilerplate Tutorials](README.md)
 * [How to Initialize and Run a Clean Template](cleantemplate.md)
-* [Adding Email Verification using SendGrid](emailverification.md)
+* __2.1.2__ [Using Docker to deploy to Azure](docker212.md)
