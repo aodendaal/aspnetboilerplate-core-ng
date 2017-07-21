@@ -20,13 +20,16 @@ ASP\.NET Core apps can run on \.NET Core or on the full \.NET Framework
 The technology formerly known as Entity Framework 7 (EF7) was renamed to Entity Framework Core (EF Core) in early 2016 but can run on the full \.NET Framework or on \.NET Core.
 
 ### Angular
-Angular is an open-source frontend web application platform
+[Angular](http://angular.io) is an open-source frontend web application platform
 
 ### RxJS
 RxJS is a library for composing asynchronous and event-based programs by using observable sequences.
 
 ### ngx-bootstrap
-The template I'm using uses [ngx-bootstrap](http://valor-software.com/ngx-bootstrap/#/) which contains all core (and not only) Bootstrap components powered by Angular. This also includes [moment.js](http://momentjs.com/) for parsing and manipulating dates. Later versions of ABP use [AdminBSB](https://github.com/gurayyarar/AdminBSBMaterialDesign), a free admin panel that is based on Bootstrap 3.x with Material Design.
+The template I'm using uses [ngx-bootstrap](http://valor-software.com/ngx-bootstrap/#/) which contains all core (and not only) Bootstrap components powered by Angular. This also includes [moment.js](http://momentjs.com/) for parsing and manipulating dates.
+
+### __2.1.2__ AdminBSB
+Later versions of ABP use [AdminBSB](https://github.com/gurayyarar/AdminBSBMaterialDesign), a free admin panel that is based on Bootstrap 3.x with Material Design. You can find working examples of all the input and components [here](https://gurayyarar.github.io/AdminBSBMaterialDesign/index.html)
 
 ## Main Articles
 * [How to Initialize and Run a Clean Template](cleantemplate.md)
