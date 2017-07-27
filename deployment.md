@@ -24,22 +24,22 @@ Possibly an easier process is a two site deployment with two different AppServic
 
 ### Backend
 
-#### 1.vi. Run database update
+#### 1. Run database update
 Unfortunately you must manually run the database updates on the server. Luckily, we can use the EF CLI in the .EntityFrameworkCore project to update the server.
 
 ### Frontend
 Now let's upload the Angular project to Azure.
 
-#### 2.ii. Enable CORS App Service Config
+#### 1. Enable CORS App Service Config
 Enable CORS on the server AppService.
 
-#### 2.iii. Update appconfig.json
+#### 2. Update appconfig.json
 Edit __/angular/src/assets/appconfig.json__ and set ```remoteServiceBaseUrl``` and ```appBaseUrl```.
 
-#### 2.iv. Build Angular Project
+#### 3. Build Angular Project
 Run ```npm run ng build``` to create a distribution of the Angular project.
 
-#### 2.v. Create web.config
+#### 4. Create web.config
 Create a __web.config__ file in the newly created __/dist__ directory in __/angular__. Populate with config file with the code below. This will allow Angular routing.
 
 ```xml
