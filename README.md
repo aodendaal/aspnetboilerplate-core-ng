@@ -23,13 +23,13 @@ The technology formerly known as Entity Framework 7 (EF7) was renamed to Entity 
 [Angular](http://angular.io) is an open-source frontend web application platform
 
 ### RxJS
-RxJS is a library for composing asynchronous and event-based programs by using observable sequences.
+[RxJS](http://reactivex.io/rxjs/) is a library for composing asynchronous and event-based programs by using observable sequences. [This article](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754) is a very good introduction to reactive programming.
 
 ### ngx-bootstrap
-The template I'm using uses [ngx-bootstrap](http://valor-software.com/ngx-bootstrap/#/) which contains all core (and not only) Bootstrap components powered by Angular. This also includes [moment.js](http://momentjs.com/) for parsing and manipulating dates.
+The 2.0.2 template uses [ngx-bootstrap](http://valor-software.com/ngx-bootstrap/#/) which contains all core (but not only) Bootstrap components powered by Angular. This also includes [moment.js](http://momentjs.com/) for parsing and manipulating dates.
 
 ### __2.1.2__ AdminBSB
-Later versions of ABP use [AdminBSB](https://github.com/gurayyarar/AdminBSBMaterialDesign), a free admin panel that is based on Bootstrap 3.x with Material Design. You can find working examples of all the input and components [here](https://gurayyarar.github.io/AdminBSBMaterialDesign/index.html)
+Later versions of ABP use [AdminBSB](https://github.com/gurayyarar/AdminBSBMaterialDesign), a free admin panel that is based on Bootstrap 3.x with Material Design. You can find working examples of all the input and components [here](https://gurayyarar.github.io/AdminBSBMaterialDesign/index.html).
 
 ## Main Articles
 * [How to Initialize and Run a Clean Template](cleantemplate.md)
