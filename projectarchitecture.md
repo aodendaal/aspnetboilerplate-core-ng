@@ -34,11 +34,14 @@ Both inherit from ```AbpServiceBase``` providing access to:
 * Logger
 * ObjectMapper
 
+## Security
+
+See [User Manager, Roles & Permissions](usermanager.md) for more details.
+
 ## Infrastructure Layer
 The __.EntityFrameworkCore__ and __.Web.Host__ projects represent the infrastructure layer.
 
 ## See Also
 * [ASP\.NET Boilerplate Tutorials](readme.md)
-* [Reading Module Configuration From AppSettings](moduleconfig.md)
 * [How to Create an Domain Entity](entity.md)
 * [How to Create an Application Service](applicationservice.md)

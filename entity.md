@@ -1,6 +1,8 @@
 # How to Create an Entity
 More correctly called a Domain Entity.
 
+## Auditing
+
 ABP provides some interfaces for tracking when an entity was creation, last modified and deleted, as well as which user made the change.
 
 You can use any of the interfaces but some do implement each other as shown in the tree view below:
@@ -15,7 +17,11 @@ You can use any of the interfaces but some do implement each other as shown in t
 * __IMustHaveTenant__
 * __IMayHaveTenant__
 
+## Other Interfaces
+
+__IPassivable__ - defines IsActive property
+
 ## See Also
 * [ASP\.NET Boilerplate Tutorials](README.md)
 * [Project Architecture](projectarchitecture.md)
-* [User roles and permissions](usermanager.md)
+* [User Manager, Roles & Permissions](usermanager.md)

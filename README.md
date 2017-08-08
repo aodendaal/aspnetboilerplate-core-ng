@@ -46,7 +46,7 @@ Later versions of ABP use [AdminBSB](https://github.com/gurayyarar/AdminBSBMater
 
 ## Domain Layer
 * [How to Create an Entity](entity.md)
-* [User roles and permissions](usermanager.md)
+* [User Manager, Roles & Permissions](usermanager.md)
 * [Localization](localization.md)
 
 ## Application Layer

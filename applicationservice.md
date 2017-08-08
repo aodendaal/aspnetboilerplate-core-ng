@@ -1,6 +1,12 @@
 # Creating an Application Service
-* [Unit of Work](#unit-of-work)
-* [Hide from Controller](#hide-from-controller)
+
+## Security
+
+```csharp
+[AbpAuthorize(params string[] permissions)]
+```
+
+See [User Manager, Roles & Permissions](usermanager.md) for more details.
 
 ## Unit of Work
 By default functions in an application service are transactional, meaning if there's an exception in the function then all repository functions are rolled back. It can be turned off by adding the ```UnitOfWork``` attribute to your function and setting ```IsDisabled``` to ```true```.
