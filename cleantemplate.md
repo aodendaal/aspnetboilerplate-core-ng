@@ -62,6 +62,12 @@ In the __/angular__ directory run:
 ```powershell
 npm install
 ```
+
+_From version 2.3.0 ASP\.NET Boilerplate uses [Yarn](https://yarnpkg.com) instead of  NPM._
+```powershell
+yarn install
+```
+
 This will take some time while it downloads all the dependencies.
 
 ## 8. Refresh Swagger Proxies
