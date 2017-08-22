@@ -43,6 +43,7 @@ Later versions of ABP use [AdminBSB](https://github.com/gurayyarar/AdminBSBMater
 ## Infrastructure Layer
 * How to Update the Database
 * [Adding Email Verification using SendGrid](emailverification.md) - A practical exercise extending ASP\.NET Boilerplate
+* [Create a Custom Repository](customrepos.md)
 
 ## Domain Layer
 * [How to Create an Entity](entity.md)
@@ -59,3 +60,4 @@ Later versions of ABP use [AdminBSB](https://github.com/gurayyarar/AdminBSBMater
 * Adding a datepicker
 * Adding a searchable/type-ahead drop-down list
 * __2.1.2__ [Updating the Menu](menu212.md)
+* [Read URL query parameters](routing.md)
