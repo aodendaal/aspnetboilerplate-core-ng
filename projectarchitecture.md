@@ -1,7 +1,7 @@
 # Project Architecture
 
 ## Layers
-* __Presentation Layer__ - Interface for the user. Uses the Appplication Layer.
+* __Presentation Layer__ - Interface for the user. Uses the Application Layer.
 * __Application Layer__ - Mediates between the Presentation and Domain Layers.
 * __Domain Layer__ - Contains the entities and business logic.
 * __Infrastructure Layer__ - Provides the specific implementation to connect to other services like the database as well as third-party libraries.
