@@ -39,6 +39,7 @@ Later versions of ABP use [AdminBSB](https://github.com/gurayyarar/AdminBSBMater
 ## Deployment
 * [Deploying to Azure](deployment.md)
 * __2.1.2__ Using Docker to deploy to Azure
+* [Determining Current Tenant](https://aspnetboilerplate.com/Pages/Documents/Multi-Tenancy#determining-current-tenant) - Link to ASP.NET Boilerplate documentation
 
 ## Infrastructure Layer
 * How to Update the Database
