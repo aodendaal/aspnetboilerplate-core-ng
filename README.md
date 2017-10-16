@@ -31,6 +31,9 @@ The 2.0.2 template uses [ngx-bootstrap](http://valor-software.com/ngx-bootstrap/
 ### __2.1.2__ AdminBSB
 Later versions of ABP use [AdminBSB](https://github.com/gurayyarar/AdminBSBMaterialDesign), a free admin panel that is based on Bootstrap 3.x with Material Design. You can find working examples of all the input and components [here](https://gurayyarar.github.io/AdminBSBMaterialDesign/index.html).
 
+### ABP API
+While not a requisite (since we're coving most of it in depth in this tutorial) the API specification is also available [online](https://aspnetboilerplate.com/api-docs/html/R_Project_Documentation.htm)
+
 ## Main Articles
 * [How to Initialize and Run a Clean Template](cleantemplate.md)
 * [Project Architecture](projectarchitecture.md)
