@@ -1,5 +1,41 @@
 # Creating an Application Service
 
+## Injecting Domain Services
+There are a couple of ways of injecting domain services (or even other application services, but this is not recommended). The dependency injector looks at the datatype passed (the interface or class name) to determine what to inject so the variable name can be anything you want.
+
+**Example: Injection via the Constructor**
+
+```csharp
+public class EntityAppService: projectAppServiceBase
+{
+    private readonly IEntityDomainService entityManager;
+
+    public EntityAppService(
+        IEntityDomainService entityManager
+    )
+    {
+        this.entityManager = entityManager;
+    }
+    
+    ...
+}
+```
+
+**Example: Injection via a Public Property**
+
+```csharp
+public class EntityAppService: projectAppServiceBase
+{
+    public IEntityDomainService EntityManager { get; set; }
+
+    public EntityAppService()
+    {
+    }
+    
+    ...
+}
+```
+
 ## Security
 
 ```csharp
