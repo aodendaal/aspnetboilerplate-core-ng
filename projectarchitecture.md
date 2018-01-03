@@ -9,7 +9,7 @@
 With regards to how the layers are implemented in our ASP\.NET Boilerplate template, the Presentation Layer is handled in the Angular project and the other layers in the ASP\.NET Core solution.
 
 ## Presentation Layer
-In our template this is handled entirely by Angular.
+In the ABP template this is handled entirely by Angular.
 
 ## Application & Domain Layers
 
@@ -18,23 +18,35 @@ An ASP\.NET Boilerplate application is composed of modules. A module registers s
 
 So when you download a template, each project in the solution is a module and these have already been composed to create a basic application.
 
-### Application & Domain Service
-Application services get and return Data Transfer Objects (DTOs)
-An application service is used by the presentation layer to interact with the domain layer.
-In our template the application services and DTO classes are in the __.Application__ project
+### Application Layer
+The application layer is the interface between the presentation layer, any third-party applications and the business rules in the domain layer.
+
+It is responsible for authorization, data validation and converting the business objects into data transfer objects (DTOs) and vice versa.
+
+The layer is made up of one or more __Application Services__ and __Data Transfer Objects__.
+
+In the ABP template the application services and DTO classes are in the __.Application__ project.
+
+### Domain Layer
+The domain layer contains the domain entities and business rules of the applacation as well as any definitions. It is the heart of the application.
+
+The domain layer is made up of one or more __Domain Services__, conventionally called _Domain Managers_ to avoid confusion with application services.
 
 Domain Services get and return domain objects (entities or value types).
-A domain service can be used by other domain services or by an application service but it cannot be used by the presentation layer.
-In our template the domain services and entities are in the __.Core__ project
 
-Both inherit from ```AbpServiceBase``` providing access to:
+A domain service can be used by other domain services or by an application service but it cannot be used by the presentation layer.
+
+In the ABP template the domain services and entities are in the __.Core__ project
+
+### AppServiceBase
+Application Services and Domain Services both inherit from ```AbpServiceBase``` providing access to:
 * SettingsManager
 * UnitOfWorkManager
 * LocalizationManager
 * Logger
 * ObjectMapper
 
-## Security
+### Security
 
 See [User Manager, Roles & Permissions](usermanager.md) for more details.
 
