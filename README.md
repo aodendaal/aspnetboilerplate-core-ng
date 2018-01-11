@@ -34,10 +34,9 @@ Later versions of ABP use [AdminBSB](https://github.com/gurayyarar/AdminBSBMater
 ### ABP API
 While not a requisite (since we're coving most of it in depth in this tutorial) the API specification is also available [online](https://aspnetboilerplate.com/api-docs/html/R_Project_Documentation.htm)
 
-## Main Articles
+## Starting Articles
 * [How to Initialize and Run a Clean Template](cleantemplate.md)
 * [Project Architecture](projectarchitecture.md)
-* [Reading Module Configuration From AppSettings](moduleconfig.md)
 
 ## Deployment
 * [Deploying to Azure](deployment.md)
@@ -53,6 +52,7 @@ While not a requisite (since we're coving most of it in depth in this tutorial) 
 * [How to Create an Entity](entity.md)
 * [User Manager, Roles & Permissions](usermanager.md)
 * [Localization](localization.md)
+* [Background Jobs with Hangfire](https://aspnetboilerplate.com/Pages/Documents/Hangfire-Integration) - Link to ASP.NET Boilerplate documentation
 
 ## Application Layer
 * [How to Create an Application Service](applicationservice.md)
@@ -64,4 +64,7 @@ While not a requisite (since we're coving most of it in depth in this tutorial) 
 * Adding a datepicker
 * Adding a searchable/type-ahead drop-down list
 * __2.1.2__ [Updating the Menu](menu212.md)
+* [Read URL query parameters](routing.md)
+
+## Modules
 * [Read URL query parameters](routing.md)
