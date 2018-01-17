@@ -33,12 +33,13 @@ Note there is an extra reference added to enable using the Entity Framework Core
 ```
 
 ## 3. Change Database Connection String
-Edit _appsettings.json_ in __.Web.Host__ to change the connection string to use __localdb__.
+Edit the _appsettings.json_ file in the __.Web.Host__ folder, and update the connection string to change the *Data Source* to use __localdb__.
 ```javascript
   "ConnectionStrings": {
     "Default": "Data Source=(localdb)\\MSSQLLocalDB; Initial Catalog=PeopleProject;"
   }
 ```
+*Initial Catalog* is the name you want to use for the database.
 
 ## 4. Restore NuGet Packages
 We will use the .NET Core Shared Framework Host to restore the projects' NuGet packages and run our Entity Framework Core commands.
@@ -50,6 +51,13 @@ dotnet restore
 
 ## 5. Create Database
 Still in PowerShell go to the __.EntityFrameworkCore__ directory and run
+
+```powershell
+dotnet ef
+```
+
+If you don't see the unicorn, something has gone wrong. Otherwise run
+
 ```powershell
 dotnet ef database update
 ```
@@ -60,13 +68,14 @@ Start Visual Studio 2017 and open the solution. Set the __.Web.Host__ project as
 ## 7. Install NPM Dependencies
 In the __/angular__ directory run:
 ```powershell
+yarn install
+```
+
+_Versions before 2.3.0 use NPM instead of Yarn._
+```powershell
 npm install
 ```
 
-_From version 2.3.0 ASP\.NET Boilerplate uses [Yarn](https://yarnpkg.com) instead of  NPM._
-```powershell
-yarn install
-```
 
 This will take some time while it downloads all the dependencies.
 

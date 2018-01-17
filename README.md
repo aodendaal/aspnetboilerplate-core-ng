@@ -1,12 +1,13 @@
 # ASP\.NET Boilerplate Tutorials
-This is a set of tutorials I've created for my junior team using [ASP\.NET Boilerplate](https://www.aspnetboilerplate.com). Specifically ASP\.NET Boilerplate __2.0.2__ using ASP\.NET Core running on \.NET Core with the Angular 2 SPA (also known as ASP\.NET Boilerplate Core & Angular).
+This is a set of tutorials I've created for my junior team using [ASP\.NET Boilerplate](https://www.aspnetboilerplate.com).
 
-These tutorials are also mostly applicable to ABP 2.1.2.
+These tutorials are also mostly applicable to ABP 3.4.
 
 ## Prerequisites Tools
 * Visual Studio 2017
 * VSCode
 * NodeJS
+* [Yarn](https://yarnpkg.com)
 
 ## Prerequisite Understanding
 ### \.NET Core
@@ -15,6 +16,8 @@ These tutorials are also mostly applicable to ABP 2.1.2.
 ### ASP\.NET Core
 ASP\.NET Core is no longer based on __System.Web.dll__
 ASP\.NET Core apps can run on \.NET Core or on the full \.NET Framework
+
+Make sure to install .NET Core 2.0 SDK
 
 ### Entity Framework Core
 The technology formerly known as Entity Framework 7 (EF7) was renamed to Entity Framework Core (EF Core) in early 2016 but can run on the full \.NET Framework or on \.NET Core.
@@ -25,11 +28,10 @@ The technology formerly known as Entity Framework 7 (EF7) was renamed to Entity 
 ### RxJS
 [RxJS](http://reactivex.io/rxjs/) is a library for composing asynchronous and event-based programs by using observable sequences. [This article](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754) is a very good introduction to reactive programming.
 
-### ngx-bootstrap
-The 2.0.2 template uses [ngx-bootstrap](http://valor-software.com/ngx-bootstrap/#/) which contains all core (but not only) Bootstrap components powered by Angular. This also includes [moment.js](http://momentjs.com/) for parsing and manipulating dates.
+### AdminBSB
+ABP uses [AdminBSB](https://github.com/gurayyarar/AdminBSBMaterialDesign), a free admin panel that is based on Bootstrap 3.x with Material Design. You can find working examples of all the input and components [here](https://gurayyarar.github.io/AdminBSBMaterialDesign/index.html).
 
-### __2.1.2__ AdminBSB
-Later versions of ABP use [AdminBSB](https://github.com/gurayyarar/AdminBSBMaterialDesign), a free admin panel that is based on Bootstrap 3.x with Material Design. You can find working examples of all the input and components [here](https://gurayyarar.github.io/AdminBSBMaterialDesign/index.html).
+The old template (version 2.0.2)  uses [ngx-bootstrap](http://valor-software.com/ngx-bootstrap/#/) which contains all core (but not only) Bootstrap components powered by Angular. This also includes [moment.js](http://momentjs.com/) for parsing and manipulating dates.
 
 ### ABP API
 While not a requisite (since we're coving most of it in depth in this tutorial) the API specification is also available [online](https://aspnetboilerplate.com/api-docs/html/R_Project_Documentation.htm)
@@ -40,7 +42,6 @@ While not a requisite (since we're coving most of it in depth in this tutorial) 
 
 ## Deployment
 * [Deploying to Azure](deployment.md)
-* __2.1.2__ Using Docker to deploy to Azure
 * [Determining Current Tenant](https://aspnetboilerplate.com/Pages/Documents/Multi-Tenancy#determining-current-tenant) - Link to ASP.NET Boilerplate documentation
 
 ## Infrastructure Layer
@@ -63,7 +64,7 @@ While not a requisite (since we're coving most of it in depth in this tutorial) 
 * [Creating modal dialogs](modals.md)
 * Adding a datepicker
 * Adding a searchable/type-ahead drop-down list
-* __2.1.2__ [Updating the Menu](menu212.md)
+* [Updating the Menu](menu212.md) (version 2.1.2 only)
 * [Read URL query parameters](routing.md)
 
 ## Modules
