@@ -66,6 +66,7 @@ While not a requisite (since we're coving most of it in depth in this tutorial) 
 * Adding a searchable/type-ahead drop-down list
 * [Updating the Menu](menu212.md) (version 2.1.2 only)
 * [Read URL query parameters](routing.md)
+* [Including JavaScript libraries](libraries.md)
 
 ## Modules
 * [Read URL query parameters](routing.md)
