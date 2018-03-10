@@ -42,7 +42,7 @@ Edit the _appsettings.json_ file in the __.Web.Host__ folder, and update the con
 *Initial Catalog* is the name you want to use for the database.
 
 ## 4. Restore NuGet Packages
-We will use the .NET Core Shared Framework Host to restore the projects' NuGet packages and run our Entity Framework Core commands.
+We will use the .NET Core Shared Framework Host (`dotnet`) to restore the projects' NuGet packages and run our Entity Framework Core commands.
 
 Open PowerShell, navigate to the __/aspnet-core__ directory and run
 ```powershell
@@ -88,8 +88,14 @@ refresh.bat
 ## 9. Run Frontend
 Return to the __/angular__ directory and run:
 ```powershell
+yarn start
+```
+
+_Versions before 2.3.0 use NPM instead of Yarn._
+```powershell
 npm start
 ```
+
 This will start the frontend as well as the continuous transpiling so that as you edit the typescript and HTML files and save the code is immediately compiled and the application refreshed.
 
 Open a web browser and navigate to the client site:

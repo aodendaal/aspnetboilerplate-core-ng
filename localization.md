@@ -1,5 +1,3 @@
-[< Back to tutorial](README.md)
-
 # Localization
 ASP\.NET Boilerplate supports localization out-of-the-box.
 
@@ -7,4 +5,7 @@ The source files can be found in the __.Core__ project in __Localization/SourceF
 
 After updating the source files you will need to refresh the swagger proxies.
 
-[< Back to tutorial](README.md)
+## See Also
+* [ASP\.NET Boilerplate Tutorials](README.md)
+* [Project Architecture](projectarchitecture.md)
+* [User Manager, Roles & Permissions](usermanager.md)

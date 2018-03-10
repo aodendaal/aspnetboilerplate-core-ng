@@ -57,6 +57,7 @@ While not a requisite (since we're coving most of it in depth in this tutorial) 
 
 ## Application Layer
 * [How to Create an Application Service](applicationservice.md)
+* [Communicating with the Application Layer](restapi.md)
 
 ## Presentation Layer
 * How to Create a Component

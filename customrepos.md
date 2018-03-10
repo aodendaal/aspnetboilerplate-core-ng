@@ -4,13 +4,17 @@ You should always strive to maintain the _Domain-Driven Design (DDD)_ and _Separ
 
 1. Create a repository interface in **.Core**
 2. Create the repository implementation in **.EntityFrameworkCore** in Repositories
-3. Inherit from ```EfCoreRepositoryBase``` and your interface
-4. Inject ```IDbContextProvider``` and ```IActiveTransactionProvider``` into the constructor
-5. Create private fields to reference the injected objects
+    1. Inherit from ```EfCoreRepositoryBase``` and your interface
+    2. Inject ```IDbContextProvider``` and ```IActiveTransactionProvider``` into the constructor
+    3. Create private fields to reference the injected objects
+3. Add the custom functions for your repository
+4. Use the custom repository in your domain service
+
+Each step is explained in more detail below.
 
 ## Creating a Repository Interface
 
-Create an interface in the **.Core** project which inherits from IRepository. Create it in the **.Core** project so it can accessed in the rest of the solution
+Create an interface in the **.Core** project which inherits from `IRepository`. The reason this is created in the **.Core** project is so it can accessed by the rest of the solution
 ```csharp
 using Abp.Domain.Repositories;
 
@@ -25,6 +29,17 @@ namespace ExampleProject
 
 ## Creating the Repository Implementation
 In your **.EntityFrameworkCore** project create a public class that implements your new repository interface.
+
+```csharp
+public class EntityRepository
+{
+
+}
+```
+
+Inherit from `EfCoreRepositoryBase`
+
+Below is the full listing:
 
 ```csharp
 using System.Data.Common;
@@ -53,6 +68,8 @@ namespace ExampleProject.EntityFrameworkCore.Repositories
 }
 ```
 
+## Adding functions to the custom repository
+
 We still need to implement the function we defined in our interface that will call the stored procedure.
 
 ```csharp
@@ -64,7 +81,7 @@ public Entity DoSomething()
     {
         var connection = context.Database.GetDbConnection();
 
-        DbCommand command = connection.CreateCommand();
+        var command = connection.CreateCommand();
         command.CommandText = "sp_DoSomething";
         command.CommandType = System.Data.CommandType.StoredProcedure;
         command.Transaction = (DbTransaction)transactionProvider.GetActiveTransaction(new ActiveTransactionProviderArgs
@@ -117,7 +134,7 @@ namespace ExampleProject.Entities
 ```
 
 ## Adding the Stored Procedure During Seeding
-TODO
+In the migration you can use `SQL()` to add a script.
 
 ## See Also
 * [ASP\.NET Boilerplate Tutorials](README.md)
