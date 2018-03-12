@@ -11,4 +11,4 @@ The tenant id is determined in the following order:
 ## See Also
 * [ASP\.NET Boilerplate Tutorials](README.md)
 * [How to Create an Application Service](applicationservice.md)
-* [User Manager, Roles & Permissions](usermanager.md)
+* [Overriding the CRUD Application Service](crudappservice.md)
