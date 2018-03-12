@@ -6,6 +6,13 @@
 * RemoveFromRoleAsync
 * RemoveFromRolesAsync
 
+## Lock outs
+By default, ABP locks a user's login for 5 minutes if they incorrectly enter their password 5 times. The count resets when the login is locked or when the user enters the correct password.
+
+![lockout message](img/lockout.png "lockout message")
+
+When a new user is created `IsLockoutEnabled` is `True` by default. `AccessFailedCount` stores the number of failed attempts to login. `LockoutEndDateUtc` stores when the account will be available again.
+
 ## Roles & Permissions
 
 ### Permissions
