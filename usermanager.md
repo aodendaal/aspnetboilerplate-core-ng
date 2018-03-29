@@ -33,6 +33,21 @@ Role names are defined as static fields in **.Core/Authorization/Roles/StaticRol
 
 The role is created and linked to permissions in **.EntityFrameworkCore/EntityFrameworkCore/Seed/Host/HostRoleAndUserCreator.cs** or **.EntityFrameworkCore/EntityFrameworkCore/Seed/Tenants/TenantRoleAndUserBuilder.cs** depending if it is a host or tenant role.
 
+For creating new tenants, static roles must be defined in **.Core/Authorization/Roles/AppRoleConfig.cs**
+
+```cs
+roleManagementConfig.StaticRoles.Add(
+    new StaticRoleDefinition(
+        StaticRoleNames.Tenants.Admin,
+        MultiTenancySides.Tenant)
+    
+roleManagementConfig.StaticRoles.Add(
+    new StaticRoleDefinition(
+        StaticRoleNames.Tenants.EndUser,
+        MultiTenancySides.Tenant)
+    );
+```
+
 ## See Also
 * [ASP\.NET Boilerplate Tutorials](README.md)
 * [Project Architecture](projectarchitecture.md)

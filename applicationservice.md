@@ -45,7 +45,9 @@ public class EntityAppService: projectAppServiceBase
 See [User Manager, Roles & Permissions](usermanager.md) for more details.
 
 ## Unit of Work
-By default functions in an application service are transactional, meaning if there's an exception in the function then all repository functions are rolled back. It can be turned off by adding the ```UnitOfWork``` attribute to your function and setting ```IsDisabled``` to ```true```.
+The UnitOfWorkManager is injected by default into MVC Controllers, application services & domain services. This means functions in an application service are transactional, i.e. if there's an exception in the function then all repository functions are rolled back.
+
+It can be turned off by adding the ```UnitOfWork``` attribute to your function and setting ```IsDisabled``` to ```true```.
 ```csharp
 [UnitOfWork(IsDisabled: true)]
 ```
