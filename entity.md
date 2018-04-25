@@ -1,4 +1,4 @@
-# How to Create an Entity
+# How to create an entity
 More correctly called a Domain Entity.
 
 ## Auditing

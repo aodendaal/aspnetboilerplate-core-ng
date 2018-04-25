@@ -43,6 +43,8 @@ While not a requisite (since we're coving most of it in depth in this tutorial) 
 ## Deployment
 * [Deploying to Azure](deployment.md)
 * [Determining Current Tenant](https://aspnetboilerplate.com/Pages/Documents/Multi-Tenancy#determining-current-tenant) - Link to ASP.NET Boilerplate documentation
+* [Accessing the server log](azurelogs.md)
+* [Using Docker to deploy to Azure](docker212.md)
 
 ## Infrastructure Layer
 * How to Update the Database
@@ -50,7 +52,7 @@ While not a requisite (since we're coving most of it in depth in this tutorial) 
 * [Create a Custom Repository](customrepos.md)
 
 ## Domain Layer
-* [How to Create an Entity](entity.md)
+* [How to create an entity](entity.md)
 * [User Manager, Roles & Permissions](usermanager.md)
 * [Localization](localization.md)
 * [Background Jobs with Hangfire](https://aspnetboilerplate.com/Pages/Documents/Hangfire-Integration) - Link to ASP.NET Boilerplate documentation
