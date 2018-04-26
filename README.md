@@ -55,7 +55,7 @@ While not a requisite (since we're coving most of it in depth in this tutorial) 
 * [How to create an entity](entity.md)
 * [User Manager, Roles & Permissions](usermanager.md)
 * [Localization](localization.md)
-* [Background Jobs with Hangfire](https://aspnetboilerplate.com/Pages/Documents/Hangfire-Integration) - Link to ASP.NET Boilerplate documentation
+* [Background Jobs](backgroundjobs.md)
 
 ## Application Layer
 * [How to Create an Application Service](applicationservice.md)

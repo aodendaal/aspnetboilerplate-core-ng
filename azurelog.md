@@ -1,6 +1,6 @@
 # Accessing the server log
 
-https://(server).scm.azurewebsites.net/api/vfs/site/wwwroot/App_Data/Logs/Logs.txt
+https://<server>.scm.azurewebsites.net/api/vfs/site/wwwroot/App_Data/Logs/Logs.txt
 
 ## See Also
 * [ASP\.NET Boilerplate Tutorials](README.md)
