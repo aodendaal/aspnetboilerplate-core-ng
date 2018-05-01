@@ -1,4 +1,4 @@
-# Create a Custom Repository
+# Creating a Custom Repository
 
 You should always strive to maintain the _Domain-Driven Design (DDD)_ and _Separation of Concerns_ by creating a custom repository in the **.EntityFrameworkCore** which you can then inject into the application or domain layers.
 

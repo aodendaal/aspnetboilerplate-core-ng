@@ -43,13 +43,11 @@ While not a requisite (since we're coving most of it in depth in this tutorial) 
 ## Deployment
 * [Deploying to Azure](deployment.md)
 * [Determining Current Tenant](https://aspnetboilerplate.com/Pages/Documents/Multi-Tenancy#determining-current-tenant) - Link to ASP.NET Boilerplate documentation
-* [Accessing the server log](azurelogs.md)
-* [Using Docker to deploy to Azure](docker212.md)
+* [Accessing the server log from Azure](serverlog.md)
 
 ## Infrastructure Layer
-* How to Update the Database
-* [Adding Email Verification using SendGrid](emailverification.md) - A practical exercise extending ASP\.NET Boilerplate
-* [Create a Custom Repository](customrepos.md)
+* [Creating a Custom Repository](customrepos.md)
+* [Writing to the server log file](serverlog.md)
 
 ## Domain Layer
 * [How to create an entity](entity.md)
@@ -63,14 +61,8 @@ While not a requisite (since we're coving most of it in depth in this tutorial) 
 * [Communicating with the Application Layer](restapi.md)
 
 ## Presentation Layer
-* How to Create a Component
 * [Built-in Functions](angularbuiltin.md)
 * [Creating modal dialogs](modals.md)
-* Adding a datepicker
-* Adding a searchable/type-ahead drop-down list
 * [Updating the Menu](menu212.md) (version 2.1.2 only)
 * [Read URL query parameters](routing.md)
 * [Including JavaScript libraries](libraries.md)
-
-## Modules
-* [Read URL query parameters](routing.md)
