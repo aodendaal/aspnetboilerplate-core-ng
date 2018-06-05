@@ -37,35 +37,35 @@ The old template (version 2.0.2)  uses [ngx-bootstrap](http://valor-software.com
 While not a requisite (since we're coving most of it in depth in this tutorial) the API specification is also available [online](https://aspnetboilerplate.com/api-docs/html/R_Project_Documentation.htm)
 
 ## Starting Articles
-* [How to Initialize and Run a Clean Template](/docs/cleantemplate.md)
+* [How to Initialize and Run a Clean Template](docs/cleantemplate.md)
 * [Project Architecture](docs/projectarchitecture.md)
 
 ## Deployment
-* [Deploying to Azure](deployment.md)
+* [Deploying to Azure](docs/deployment.md)
 * [Determining Current Tenant](https://aspnetboilerplate.com/Pages/Documents/Multi-Tenancy#determining-current-tenant) - Link to ASP.NET Boilerplate documentation
-* [Accessing the server log from Azure](serverlog.md)
+* [Accessing the server log from Azure](docs/serverlog.md)
 
 ## Infrastructure Layer
-* [Creating a Custom Repository](customrepos.md)
-* [Writing to the server log file](serverlog.md)
+* [Creating a Custom Repository](docs/customrepos.md)
+* [Writing to the server log file](docs/serverlog.md)
 
 ## Domain Layer
-* [How to create an entity](entity.md)
-* [User Manager, Roles & Permissions](usermanager.md)
-* [Localization](localization.md)
-* [Background Jobs](backgroundjobs.md)
+* [How to create an entity](docs/entity.md)
+* [User Manager, Roles & Permissions](docs/usermanager.md)
+* [Localization](docs/localization.md)
+* [Background Jobs](docs/backgroundjobs.md)
 
 ## Application Layer
-* [How to Create an Application Service](applicationservice.md)
-* [Overriding the CRUD Application Service](crudappservice.md)
-* [Communicating with the Application Layer](restapi.md)
+* [How to Create an Application Service](docs/applicationservice.md)
+* [Overriding the CRUD Application Service](docs/crudappservice.md)
+* [Communicating with the Application Layer](docs/restapi.md)
 
 ## Presentation Layer
-* [Built-in Functions](angularbuiltin.md)
-* [Creating modal dialogs](modals.md)
-* [Updating the Menu](menu212.md) (version 2.1.2 only)
-* [Read URL query parameters](routing.md)
-* [Including JavaScript libraries](libraries.md)
+* [Built-in Functions](docs/angularbuiltin.md)
+* [Creating modal dialogs](docs/modals.md)
+* [Updating the Menu](docs/menu212.md) (version 2.1.2 only)
+* [Read URL query parameters](docs/routing.md)
+* [Including JavaScript libraries](docs/libraries.md)
 
 ## AppFactory Customizations
 * [Entity Not Found Exception](https://gist.github.com/aodendaal/86fedc36b3593a4adbd4e35ef0327702)

@@ -107,6 +107,6 @@ http://localhost:4200
 > Now we can start to create our own customizations on top of the ASP\.NET Boilerplate platform.
 
 ## See Also
-* [ASP\.NET Boilerplate Tutorials](README.md)
+* [ASP\.NET Boilerplate Tutorials](./README.md)
 * [Project Architecture](projectarchitecture.md)
 * [Reading Module Configuration From AppSettings](moduleconfig.md)
