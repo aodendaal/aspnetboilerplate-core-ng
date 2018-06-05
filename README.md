@@ -37,8 +37,8 @@ The old template (version 2.0.2)  uses [ngx-bootstrap](http://valor-software.com
 While not a requisite (since we're coving most of it in depth in this tutorial) the API specification is also available [online](https://aspnetboilerplate.com/api-docs/html/R_Project_Documentation.htm)
 
 ## Starting Articles
-* [How to Initialize and Run a Clean Template](cleantemplate.md)
-* [Project Architecture](projectarchitecture.md)
+* [How to Initialize and Run a Clean Template](/docs/cleantemplate.md)
+* [Project Architecture](docs/projectarchitecture.md)
 
 ## Deployment
 * [Deploying to Azure](deployment.md)
