@@ -59,6 +59,7 @@ While not a requisite (since we're coving most of it in depth in this tutorial) 
 * [How to Create an Application Service](docs/applicationservice.md)
 * [Overriding the CRUD Application Service](docs/crudappservice.md)
 * [Communicating with the Application Layer](docs/restapi.md)
+* [Using Predefined Permissions](docs/permissions.md)
 
 ## Presentation Layer
 * [Built-in Functions](docs/angularbuiltin.md)
