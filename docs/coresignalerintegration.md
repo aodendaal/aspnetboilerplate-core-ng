@@ -15,10 +15,10 @@ Follow the installation steps [here](https://aspnetboilerplate.com/Pages/Documen
 * Add Abp.AppFactory.Sync as a dependency to you WebCoreModule
 ```cs
 [DependsOn( ...,
-   typeof(Abp.AppFactory.Sync)]
+      typeof(Abp.AppFactory.Sync)]
 public class ExampleWebCoreModule : AbpModule 
 { 
-...
+     ...
 }
 ```
 
@@ -28,12 +28,10 @@ public class ExampleWebCoreModule : AbpModule
 
 * Add the [Abp.AppFactory.Interfaces Nuget Package]() to your Application project
 
-* Add Abp.AppFactory.Interfaces as a dependency to you ApplicationModule
-```cs
-[DependsOn( ...,
-   typeof(Abp.AppFactory.Interfaces)]
-public class ExampleApplicationModule : AbpModule 
-{ 
-...
-}
+## 4. Add Abp.AppFactory.AsyncCrudAppServiceBase
+
+***If Abp.AppFactory.AsyncCrudAppServiceBase is already included in your Application project then skip to step 4***
+
+* Add the [Abp.AppFactory.AsyncCrudAppServiceBase Nuget Package]() to your Application project
+
 ```
