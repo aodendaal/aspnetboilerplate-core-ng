@@ -69,11 +69,11 @@ public class ExampleAppService : AsyncCrudAppServiceBase<Example, ExampleDto>
             await Sync();
         }
 ```
-# 6. Add Abp.AppFactory.SyncedPagedListingComponentBase 
+## 6. Add Abp.AppFactory.SyncedPagedListingComponentBase 
 
 * Add the [Abp.AppFactory.SyncedPagedListingComponentBase](https://github.com/aodendaal/abp-appfactory-syncedpagedlistingcomponentbase) file to your shared folder in your Angular project
 
-# 7. Implement Sync on your Angular Components 
+## 7. Implement Sync on your Angular Components 
 
 * Extend components with SyncedPagedListingComponentBase
 
