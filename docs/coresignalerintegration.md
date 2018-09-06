@@ -10,7 +10,7 @@ Follow the installation steps [here](https://aspnetboilerplate.com/Pages/Documen
 
 ## 2. Add Abp.AppFactory.Sync
 
-* Add the [Abp.AppFactory.Sync Nuget Package]() to your Web.Core project
+* Add the [Abp.AppFactory.Sync NuGet Package]() to your Web.Core project
 
 * Add Abp.AppFactory.Sync as a dependency to you WebCoreModule
 ```cs
@@ -26,13 +26,11 @@ public class ExampleWebCoreModule : AbpModule
 
 ***If Abp.AppFactory.Interfaces 1.3.0 or greater is already included in your Application project then skip to step 4***
 
-* Add the [Abp.AppFactory.Interfaces Nuget Package]() to your Application project
+* Add the [Abp.AppFactory.Interfaces NuGet Package]() to your Application project
 
 ## 4. Add Abp.AppFactory.AsyncCrudAppServiceBase
 
-***If Abp.AppFactory.AsyncCrudAppServiceBase is already included in your Application project then skip to step 4***
-
-* Add the [Abp.AppFactory.AsyncCrudAppServiceBase Nuget Package]() to your Application project
+* Add the [Abp.AppFactory.AsyncCrudAppServiceBase NuGet Package]() to your Application project
 
 ## 5. Implement Sync on your Application Services 
 
@@ -71,3 +69,36 @@ public class ExampleAppService : AsyncCrudAppServiceBase<Example, ExampleDto>
             await Sync();
         }
 ```
+# 6. Add Abp.AppFactory.SyncedPagedListingComponentBase 
+
+* Add the [Abp.AppFactory.SyncedPagedListingComponentBase](https://github.com/aodendaal/abp-appfactory-syncedpagedlistingcomponentbase) file to your shared folder in your Angular project
+
+# 7. Implement Sync on your Angular Components 
+
+* Extend components with SyncedPagedListingComponentBase
+
+```ts
+export class ExampleComponent extends SyncedPagedListingComponentBase<ExampleDto> {
+      ...
+      constructor(
+            injector: Injector,
+            ...
+      ) {
+            super(injector, ExampleDto);
+            ...
+      }
+}
+```
+
+* If overriding ngOnInit be sure to call the super method
+
+```ts
+  ngOnInit() {
+      super.ngOnInit();
+      ...
+  }
+```
+
+# Done!
+
+* Now when an entity is added or updated all related pages will refresh their data 
