@@ -10,7 +10,7 @@ Follow the installation steps [here](https://aspnetboilerplate.com/Pages/Documen
 
 ## 2. Add Abp.AppFactory.Sync
 
-* Add the [Abp.AppFactory.Sync NuGet Package]() to your Web.Core project
+* Add the [Abp.AppFactory.Sync NuGet Package](https://www.nuget.org/packages/Abp.AppFactory.Sync) to your Web.Core project
 
 * Add Abp.AppFactory.Sync as a dependency to you WebCoreModule
 ```cs
@@ -26,17 +26,20 @@ public class ExampleWebCoreModule : AbpModule
 
 ***If Abp.AppFactory.Interfaces 1.3.0 or greater is already included in your Application project then skip to step 4***
 
-* Add the [Abp.AppFactory.Interfaces NuGet Package]() to your Application project
+* Add the [Abp.AppFactory.Interfaces NuGet Package](https://www.nuget.org/packages/Abp.AppFactory.Interfaces) to your Application project
 
 ## 4. Add Abp.AppFactory.AsyncCrudAppServiceBase
 
-* Add the [Abp.AppFactory.AsyncCrudAppServiceBase NuGet Package]() to your Application project
+* Add the [Abp.AppFactory.AsyncCrudAppServiceBase NuGet Package](https://www.nuget.org/packages/Abp.AppFactory.AsyncCrudAppServiceBase) to your Application project
 
 ## 5. Implement Sync on your Application Services 
 
 * Inherit AsyncCrudAppServiceBase on all your crud AppServices
 
 ```cs
+...
+using Abp.AppFactory
+
 public class ExampleAppService : AsyncCrudAppServiceBase<Example, ExampleDto>
 {
 
