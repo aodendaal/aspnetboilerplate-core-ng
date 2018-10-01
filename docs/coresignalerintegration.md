@@ -32,7 +32,26 @@ public class ExampleWebCoreModule : AbpModule
 
 * Add the [Abp.AppFactory.AsyncCrudAppServiceBase NuGet Package](https://www.nuget.org/packages/Abp.AppFactory.AsyncCrudAppServiceBase) to your Application project
 
-## 5. Implement Sync on your Application Services 
+## 5. Use SyncHub in Startup
+
+* In ```Startup.cs``` in ```Configure()``` replace AbpCommonHub with SyncHub:
+
+```cs
+using Abp.AppFactory.Sync;
+...
+public void Configure(...)
+{
+      ...
+
+      app.UseSignalR(routes =>
+      {
+          routes.MapHub<SyncHub>("/signalr");
+      });
+      
+      ...
+}
+
+## 6. Implement Sync on your Application Services 
 
 * Inherit AsyncCrudAppServiceBase on all your crud AppServices
 
@@ -72,11 +91,11 @@ public class ExampleAppService : AsyncCrudAppServiceBase<Example, ExampleDto>
             await Sync();
         }
 ```
-## 6. Add Abp.AppFactory.SyncedPagedListingComponentBase 
+## 7. Add Abp.AppFactory.SyncedPagedListingComponentBase 
 
 * Add the [Abp.AppFactory.SyncedPagedListingComponentBase](https://github.com/aodendaal/abp-appfactory-syncedpagedlistingcomponentbase) file to your shared folder in your Angular project
 
-## 7. Implement Sync on your Angular Components 
+## 8. Implement Sync on your Angular Components 
 
 * Extend components with SyncedPagedListingComponentBase
 
