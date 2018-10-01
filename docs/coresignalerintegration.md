@@ -37,6 +37,7 @@ public class ExampleWebCoreModule : AbpModule
 * In ```Startup.cs``` in ```Configure()``` replace AbpCommonHub with SyncHub:
 
 ```cs
+...
 using Abp.AppFactory.Sync;
 ...
 public void Configure(...)
@@ -50,6 +51,7 @@ public void Configure(...)
       
       ...
 }
+```
 
 ## 6. Implement Sync on your Application Services 
 
