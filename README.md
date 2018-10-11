@@ -48,6 +48,7 @@ While not a requisite (since we're coving most of it in depth in this tutorial) 
 ## Infrastructure Layer
 * [Creating a Custom Repository](docs/customrepos.md)
 * [Writing to the server log file](docs/serverlog.md)
+* [Enabling Social Login](docs/sociallogin.md)
 
 ## Domain Layer
 * [How to create an entity](docs/entity.md)
