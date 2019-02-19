@@ -69,6 +69,7 @@ While not a requisite (since we're coving most of it in depth in this tutorial) 
 * [Updating the Menu](docs/menu212.md) (version 2.1.2 only)
 * [Read URL query parameters](docs/routing.md)
 * [Including JavaScript libraries](docs/libraries.md)
+* [Using SignalR](docs/signalr.md)
 
 ## AppFactory Customizations
 * [Entity Not Found Exception](https://gist.github.com/aodendaal/86fedc36b3593a4adbd4e35ef0327702)

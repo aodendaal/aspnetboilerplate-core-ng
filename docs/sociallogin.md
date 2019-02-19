@@ -5,19 +5,19 @@ The [documentation](https://aspnetboilerplate.com/Pages/Documents/Zero/User-Mana
 ## Facebook
 
 ## Google
-To enable authentication via Google we must add the **Microsoft.AspNetCore.Authenticateion.Google** package to the **.Web.Host** project 
+To enable authentication via Google we must add the **Microsoft.AspNetCore.Authenticateion.Google** package to the **.Web.Host** project. 
 
 ```dotnet add package Microsoft.AspNetCore.Authentication.Google```
 
-Then, in **Startup.cs** in the **ConfigureServices** function add:
+Then, in **AuthConfigurer.cs** in the **Configure** function add:
 
 ```csharp
-if (bool.Parse(configuration["Authentication:Google:IsEnabled"]))
+if (bool.Parse(_appConfiguration["Authentication:Google:IsEnabled"]))
 {
     services.AddAuthentication().AddGoogle(googleOptions =>
     {
-        googleOptions.ClientId = configuration["Authentication:Google:ClientId"];
-        googleOptions.ClientSecret = configuration["Authentication:Google:ClientSecret"];
+        googleOptions.ClientId = _appConfiguration["Authentication:Google:ClientId"];
+        googleOptions.ClientSecret = _appConfiguration["Authentication:Google:ClientSecret"];
     });
 }
 ```
