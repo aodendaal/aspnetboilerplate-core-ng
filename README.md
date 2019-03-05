@@ -70,6 +70,7 @@ While not a requisite (since we're coving most of it in depth in this tutorial) 
 * [Read URL query parameters](docs/routing.md)
 * [Including JavaScript libraries](docs/libraries.md)
 * [Using SignalR](docs/signalr.md)
+* [What is the 'clearfix' class for?](docs/clearfix.md)
 
 ## AppFactory Customizations
 * [Entity Not Found Exception](https://gist.github.com/aodendaal/86fedc36b3593a4adbd4e35ef0327702)
