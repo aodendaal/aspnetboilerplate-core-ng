@@ -170,7 +170,7 @@ Used to register to and trigger client side global events.
 ### info
 ```abp.message.info(message: string, title?: string): Promise;```
 
-![info dialog](img/infomessage.png "info dialog")
+![info dialog](/img/infomessage.png "info dialog")
 
 ### success
 ```abp.message.success(message: string, title?: string): Promise;```
@@ -195,7 +195,7 @@ Generates an error notification
 
 Generates an information notification
 
-![info notification](img/infonotification.png "info notification")
+![info notification](/img/infonotification.png "info notification")
 
 ### success
 ```success(message: string, title?: string, options?: any): void;```

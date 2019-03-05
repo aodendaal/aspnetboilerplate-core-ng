@@ -2,7 +2,7 @@
 
 If an element is taller than the element containing it (i.e. the Bootstrap _row_), and it is floated, it will overflow outside of its container.
 
-![clearfix problem](img/clearfix_prob.jpg "clearfix problem")
+![clearfix problem](/img/clearfix_prob.jpg "clearfix problem")
 
 Adding the class _clearfix_ solves the problem
 
