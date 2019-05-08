@@ -62,6 +62,7 @@ While not a requisite (since we're coving most of it in depth in this tutorial) 
 * [Communicating with the Application Layer](docs/restapi.md)
 * [Using Predefined Permissions](docs/permissions.md)
 * [Integrate ASPNET Core SignalR](docs/coresignalerintegration.md)
+* [Throwing HTTP Error Codes](docs/exceptions.md)
 
 ## Presentation Layer
 * [Built-in Functions](docs/angularbuiltin.md)
@@ -71,6 +72,7 @@ While not a requisite (since we're coving most of it in depth in this tutorial) 
 * [Including JavaScript libraries](docs/libraries.md)
 * [Using SignalR](docs/signalr.md)
 * [What is the 'clearfix' class for?](docs/clearfix.md)
+* [ExpressionChangedAfterItHasBeenCheckedError](https://blog.angular-university.io/angular-debugging/)
 
 ## AppFactory Customizations
 * [Entity Not Found Exception](https://gist.github.com/aodendaal/86fedc36b3593a4adbd4e35ef0327702)
